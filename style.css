@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Encode Sans Expanded", sans-serif;
+    outline: none;
+}
+
+body {
+    background: #d8ccff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+main {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume {
+    display: flex;
+    padding: 10px 0;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume>div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #242d3f;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    background-color: #f5f0ff;
+}
+
+.newItem {
+    display: flex;
+  gap: 10px;
+  align-items: end;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.divDesc, .divType, .divAmount {
+    display: flex;
+    flex-direction: column;
+  }
+
+.newItem>button {
+    background-color: rgb(111, 100, 255);
+    color: #ffffff;
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+}
+
+.divTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 95%;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+th {
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+}
+
+i {
+    font-size: 25px;
+}
+
+.bxs-chevron-up-circle {
+    color: rgb(68, 177, 207);
+}
+
+.bxs-chevron-down-circle {
+    color: rgb(173, 74, 74);
+}
+
+.columnAction {
+    width: 40px;
+    text-align: center;
+}
+
+.columnAction>button {
+    background: transparent;
+    border: none;
+}
+.columnAmount {
+    width: 30%;
+}
+.columnType {
+    width: 80px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .resume {
+        display: grid;
+        align-items: center;
+        margin: 0;
+        margin-top: 24px;
+    }
+    .resume>div {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .newItem {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 40%;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 24px;
+        align-items: ceter;
+    }
+
+    .divTable {
+        width: 85%;
+    }
+    table {
+        font-size: small;
+    }
+
+}
